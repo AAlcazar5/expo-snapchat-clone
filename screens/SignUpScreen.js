@@ -53,36 +53,34 @@ const SignUpScreen = () => {
           className="h-12 w-12"
         />
 
-        <View className="mr-20">
-          <TextInput
-            placeholder="Email"
-            placeholderTextColor="white"
-            className="mt-8"
-            value={email}
-            onChangeText={(text) => setEmail(text)}
-            autoCapitalize="none"
-          />
-          <TextInput
-            placeholder="Password"
-            placeholderTextColor="white"
-            className="mt-4"
-            value={password}
-            onChangeText={(value) => validateAndSet(value, setPassword)}
-            secureTextEntry
-            autoCapitalize="none"
-          />
-          <TextInput
-            placeholder="Confirm Password"
-            placeholderTextColor="white"
-            className="mt-4"
-            value={confirmPassword}
-            onChangeText={(value) => validateAndSet(value, setConfirmPassword)}
-            secureTextEntry
-            autoCapitalize="none"
-            onBlur={() => checkPassword(password, confirmPassword)}
-          />
-          {<Text className="mt-2 text-white">{validationMessage}</Text>}
-        </View>
+        <TextInput
+          placeholder="Email"
+          placeholderTextColor="white"
+          className="mt-8 w-56"
+          value={email}
+          onChangeText={(text) => setEmail(text)}
+          autoCapitalize="none"
+        />
+        <TextInput
+          placeholder="Password"
+          placeholderTextColor="white"
+          className="mt-8 w-56"
+          value={password}
+          onChangeText={(value) => validateAndSet(value, setPassword)}
+          secureTextEntry
+          autoCapitalize="none"
+        />
+        <TextInput
+          placeholder="Confirm Password"
+          placeholderTextColor="white"
+          className="mt-8 w-56"
+          value={confirmPassword}
+          onChangeText={(value) => validateAndSet(value, setConfirmPassword)}
+          secureTextEntry
+          autoCapitalize="none"
+          onBlur={() => checkPassword(password, confirmPassword)}
+        />
+        {<Text className="mt-2 text-white">{validationMessage}</Text>}
 
         {/* Sign up Button */}
         <View className="items-center justify-center">
