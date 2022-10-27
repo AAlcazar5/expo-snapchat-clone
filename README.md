@@ -19,3 +19,5 @@ To get started:
 4. npm run start
 
 *note: in order to properly obtain the ANDROID_CLIENT_ID, you must run (expo build:android) then (expo fetch:android:hashes) in your expo app, and fetch the SHA-1 SHA-256 hashes to input into your firebase android app config.
+
+![IMG_0726](https://user-images.githubusercontent.com/25801107/198171290-ce9fb1e4-8ddf-40a8-a615-e9aa1dcdcc86.PNG)
